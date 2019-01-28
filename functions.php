@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lloan
- * Date: 1/27/2019
- * Time: 3:24 PM
- */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Not today, bad hombre.' );
+}
+
+require_once(__DIR__ . '/core.php');
+
+$lalas = new LALAS\Core();
