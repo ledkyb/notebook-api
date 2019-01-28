@@ -28,7 +28,8 @@ class Posts {
 				'title'   => $post->post_title,
 				'date'    => get_the_date( 'F d, Y', $post->ID ),
 				'tags'    => $tags,
-				'content' => $post->post_content
+				'content' => $post->post_content,
+				'excerpt' => apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID))
 
 			];
 
